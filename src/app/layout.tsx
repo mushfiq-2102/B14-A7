@@ -11,6 +11,9 @@ const hindSiliguri = Hind_Siliguri({
   weight: ["400", "500", "600", "700"],
 });
 
+// date and price ticker must be fresh on every request
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "বাজার দর | BazarDor",
   description: "প্রয়োজনীয় পণ্যের দাম এক নজরে।",
