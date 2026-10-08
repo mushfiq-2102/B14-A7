@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "bazardor";
+  default: true;
+  color-scheme: light;
+  --color-base-100: #fafcfa;
+  --color-base-200: #f0f5f0;
+  --color-base-300: #e1e8e1;
+  --color-base-content: #1d271f;
+  --color-primary: #05893e;
+  --color-primary-content: #f3fbf4;
+  --color-secondary: #047f39;
+  --color-secondary-content: #f3fbf4;
+  --color-accent: #1a9951;
+  --color-accent-content: #f3fbf4;
+  --color-neutral: #1d271f;
+  --color-neutral-content: #fafcfa;
+  --color-info: #0284c7;
+  --color-info-content: #f0f9ff;
+  --color-success: #1a9951;
+  --color-success-content: #f3fbf4;
+  --color-warning: #d97706;
+  --color-warning-content: #fffbeb;
+  --color-error: #d03739;
+  --color-error-content: #fff6f5;
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
