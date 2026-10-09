@@ -9,7 +9,6 @@ import toast from "react-hot-toast";
 const SignInPage = () => {
   const router = useRouter();
 
-  // user was redirected here from a protected route
   useEffect(() => {
     if (new URLSearchParams(window.location.search).get("protected")) {
       toast.error("এই পেজটি দেখতে আগে সাইন ইন করুন!", { id: "protected-route" });

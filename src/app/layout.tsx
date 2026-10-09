@@ -11,7 +11,6 @@ const hindSiliguri = Hind_Siliguri({
   weight: ["400", "500", "600", "700"],
 });
 
-// date and price ticker must be fresh on every request
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -24,6 +23,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="bn"
       data-theme="bazardor"
+      data-scroll-behavior="smooth"
       className={`${hindSiliguri.className} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-base-200">
