@@ -36,7 +36,7 @@ const ProductDetailsPage = async ({
   const { slug } = await params;
 
   const res = await fetch(
-    `https://api.abcz.workers.dev/api/bazardor/products?slug=${encodeURIComponent(slug)}`,
+    `https://openapi.programming-hero.com/api/bazardor/products?slug=${encodeURIComponent(slug)}`,
   );
 
   const products: Product[] = res.ok ? await res.json() : [];

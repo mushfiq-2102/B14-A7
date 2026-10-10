@@ -26,7 +26,7 @@ const CategoryPage = async ({
   const { categoryId } = await params;
 
   const categoryRes = await fetch(
-    `https://api.abcz.workers.dev/api/bazardor/categories/${encodeURIComponent(categoryId)}`,
+    `https://openapi.programming-hero.com/api/bazardor/categories/${encodeURIComponent(categoryId)}`,
   );
 
   const category: Category | null = categoryRes.ok
@@ -38,7 +38,7 @@ const CategoryPage = async ({
   }
 
   const res = await fetch(
-    `https://api.abcz.workers.dev/api/bazardor/products?category=${encodeURIComponent(categoryId)}`,
+    `https://openapi.programming-hero.com/api/bazardor/products?category=${encodeURIComponent(categoryId)}`,
   );
 
   const products: Product[] = res.ok ? await res.json() : [];
