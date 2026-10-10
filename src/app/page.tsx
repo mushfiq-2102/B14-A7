@@ -13,7 +13,7 @@ interface Product {
 }
 
 export default async function Home() {
-  const res = await fetch("https://api.api-store.workers.dev/api/bazardor/products");
+  const res = await fetch("https://api.abcz.workers.dev/api/bazardor/products");
   const products: Product[] = await res.json();
   const date = getBanglaDate();
 
